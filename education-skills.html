@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application — Step 4: Education &amp; Skills</title>
+</head>
+<body>
+  <header>
+    <h1>Job Application Form</h1>
+    <p>Step 4 of 4: Education &amp; Skills</p>
+  </header>
+
+  <nav aria-label="Application steps">
+    <ul>
+      <li><a href="personal-information.html">1. Personal Information</a></li>
+      <li><a href="position.html">2. Position</a></li>
+      <li><a href="experience.html">3. Experience</a></li>
+      <li><a href="education-skills.html" aria-current="page">4. Education &amp; Skills</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Education &amp; Skills</h2>
+    <p>Complete your application by providing your educational background and relevant skills.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Highest Level of Education</legend>
+
+        <p>
+          <label for="degree">Degree / Certification *</label>
+          <select id="degree" name="degree" required>
+            <option value="">Select a degree</option>
+            <option value="high-school">High School Diploma</option>
+            <option value="associate">Associate Degree</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="school-name">School / Institution Name *</label>
+          <input
+            type="text"
+            id="school-name"
+            name="school-name"
+            required
+            minlength="2"
+            maxlength="150"
+          >
+        </p>
+
+        <p>
+          <label for="field-of-study">Field of Study *</label>
+          <input
+            type="text"
+            id="field-of-study"
+            name="field-of-study"
+            required
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="graduation-date">Graduation Date (or Expected) *</label>
+          <input
+            type="date"
+            id="graduation-date"
+            name="graduation-date"
+            required
+            min="1970-01-01"
+            max="2030-12-31"
+          >
+        </p>
+
+        <p>
+          <label for="gpa">GPA (0.0–4.0)</label>
+          <input
+            type="number"
+            id="gpa"
+            name="gpa"
+            min="0"
+            max="4"
+            step="0.01"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Technical Skills</legend>
+        <p>Select all skills that apply to you.</p>
+
+        <p>
+          <label for="primary-skill">Primary Technical Skill *</label>
+          <select id="primary-skill" name="primary-skill" required>
+            <option value="">Select your primary skill</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+            <option value="node">Node.js</option>
+            <option value="python">Python</option>
+            <option value="sql">SQL</option>
+            <option value="git">Git / Version Control</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-html" name="skills" value="html">
+          <label for="skill-html">HTML</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-css" name="skills" value="css">
+          <label for="skill-css">CSS</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-javascript" name="skills" value="javascript">
+          <label for="skill-javascript">JavaScript</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-react" name="skills" value="react">
+          <label for="skill-react">React</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-node" name="skills" value="node">
+          <label for="skill-node">Node.js</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-python" name="skills" value="python">
+          <label for="skill-python">Python</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-sql" name="skills" value="sql">
+          <label for="skill-sql">SQL</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="skill-git" name="skills" value="git">
+          <label for="skill-git">Git / Version Control</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Language Proficiency</legend>
+
+        <p>
+          <label for="primary-language">Primary Language *</label>
+          <select id="primary-language" name="primary-language" required>
+            <option value="">Select a language</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="mandarin">Mandarin</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="language-level">Proficiency Level *</label>
+          <select id="language-level" name="language-level" required>
+            <option value="">Select proficiency</option>
+            <option value="native">Native / Bilingual</option>
+            <option value="fluent">Fluent</option>
+            <option value="professional">Professional Working</option>
+            <option value="basic">Basic</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Certifications (Optional)</legend>
+
+        <p>
+          <input type="checkbox" id="cert-aws" name="certifications" value="aws">
+          <label for="cert-aws">AWS Certified</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="cert-google" name="certifications" value="google">
+          <label for="cert-google">Google Professional Certificate</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="cert-pmp" name="certifications" value="pmp">
+          <label for="cert-pmp">PMP (Project Management Professional)</label>
+        </p>
+
+        <p>
+          <label for="other-certification">Other Certification</label>
+          <input
+            type="text"
+            id="other-certification"
+            name="other-certification"
+            maxlength="150"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Final Documents &amp; Statements</legend>
+
+        <p>
+          <label for="cover-letter">Cover Letter *</label>
+          <textarea
+            id="cover-letter"
+            name="cover-letter"
+            required
+            rows="8"
+            minlength="100"
+            maxlength="5000"
+          ></textarea>
+        </p>
+
+        <p>
+          <label for="portfolio-url">Portfolio or LinkedIn URL</label>
+          <input
+            type="url"
+            id="portfolio-url"
+            name="portfolio-url"
+            placeholder="https://example.com"
+          >
+        </p>
+
+        <p>
+          <label for="additional-comments">Additional Comments</label>
+          <textarea
+            id="additional-comments"
+            name="additional-comments"
+            rows="4"
+            maxlength="1000"
+          ></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Application Agreement *</legend>
+
+        <p>
+          <input type="checkbox" id="terms-agreement" name="terms-agreement" value="accepted" required>
+          <label for="terms-agreement">I certify that the information provided is true and accurate to the best of my knowledge.</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="background-check" name="background-check" value="consent" required>
+          <label for="background-check">I consent to a background check if required for this position.</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Submit Application</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

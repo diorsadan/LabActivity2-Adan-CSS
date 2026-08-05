@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application — Step 2: Position</title>
+</head>
+<body>
+  <header>
+    <h1>Job Application Form</h1>
+    <p>Step 2 of 4: Position Details</p>
+  </header>
+
+  <nav aria-label="Application steps">
+    <ul>
+      <li><a href="personal-information.html">1. Personal Information</a></li>
+      <li><a href="position.html" aria-current="page">2. Position</a></li>
+      <li><a href="experience.html">3. Experience</a></li>
+      <li><a href="education-skills.html">4. Education &amp; Skills</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Position Details</h2>
+    <p>Tell us about the role you are applying for and your work preferences.</p>
+
+    <form action="experience.html" method="get">
+      <fieldset>
+        <legend>Role Information</legend>
+
+        <p>
+          <label for="position-title">Position Applying For *</label>
+          <select id="position-title" name="position-title" required>
+            <option value="">Select a position</option>
+            <option value="frontend-developer">Frontend Developer</option>
+            <option value="backend-developer">Backend Developer</option>
+            <option value="fullstack-developer">Full Stack Developer</option>
+            <option value="ui-ux-designer">UI/UX Designer</option>
+            <option value="project-manager">Project Manager</option>
+            <option value="qa-engineer">QA Engineer</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="department">Department *</label>
+          <select id="department" name="department" required>
+            <option value="">Select a department</option>
+            <option value="engineering">Engineering</option>
+            <option value="design">Design</option>
+            <option value="product">Product</option>
+            <option value="marketing">Marketing</option>
+            <option value="operations">Operations</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="desired-start-date">Desired Start Date *</label>
+          <input
+            type="date"
+            id="desired-start-date"
+            name="desired-start-date"
+            required
+            min="2026-01-01"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Employment Type *</legend>
+
+        <p>
+          <input type="radio" id="employment-full-time" name="employment-type" value="full-time" required>
+          <label for="employment-full-time">Full-time</label>
+        </p>
+
+        <p>
+          <input type="radio" id="employment-part-time" name="employment-type" value="part-time">
+          <label for="employment-part-time">Part-time</label>
+        </p>
+
+        <p>
+          <input type="radio" id="employment-contract" name="employment-type" value="contract">
+          <label for="employment-contract">Contract</label>
+        </p>
+
+        <p>
+          <input type="radio" id="employment-internship" name="employment-type" value="internship">
+          <label for="employment-internship">Internship</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Compensation &amp; Availability</legend>
+
+        <p>
+          <label for="salary-expectation">Expected Annual Salary (USD) *</label>
+          <input
+            type="number"
+            id="salary-expectation"
+            name="salary-expectation"
+            required
+            min="20000"
+            max="500000"
+            step="1000"
+          >
+        </p>
+
+        <p>
+          <input type="checkbox" id="willing-to-relocate" name="willing-to-relocate" value="yes">
+          <label for="willing-to-relocate">I am willing to relocate for this position</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="available-immediately" name="available-immediately" value="yes">
+          <label for="available-immediately">I am available to start immediately</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Work Location Preference</legend>
+
+        <p>
+          <input type="checkbox" id="pref-onsite" name="work-preference" value="onsite">
+          <label for="pref-onsite">On-site</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="pref-remote" name="work-preference" value="remote">
+          <label for="pref-remote">Remote</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="pref-hybrid" name="work-preference" value="hybrid">
+          <label for="pref-hybrid">Hybrid</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Save and Continue</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application — Step 3: Experience</title>
+</head>
+<body>
+  <header>
+    <h1>Job Application Form</h1>
+    <p>Step 3 of 4: Work Experience</p>
+  </header>
+
+  <nav aria-label="Application steps">
+    <ul>
+      <li><a href="personal-information.html">1. Personal Information</a></li>
+      <li><a href="position.html">2. Position</a></li>
+      <li><a href="experience.html" aria-current="page">3. Experience</a></li>
+      <li><a href="education-skills.html">4. Education &amp; Skills</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Work Experience</h2>
+    <p>Share your most recent employment history and upload your resume.</p>
+
+    <form action="education-skills.html" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Most Recent Position</legend>
+
+        <p>
+          <label for="company-name">Company Name *</label>
+          <input
+            type="text"
+            id="company-name"
+            name="company-name"
+            required
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="job-title">Job Title *</label>
+          <input
+            type="text"
+            id="job-title"
+            name="job-title"
+            required
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="employment-start">Start Date *</label>
+          <input
+            type="date"
+            id="employment-start"
+            name="employment-start"
+            required
+            max="2026-12-31"
+          >
+        </p>
+
+        <p>
+          <label for="employment-end">End Date</label>
+          <input
+            type="date"
+            id="employment-end"
+            name="employment-end"
+            min="1980-01-01"
+            max="2026-12-31"
+          >
+        </p>
+
+        <p>
+          <input type="checkbox" id="currently-employed" name="currently-employed" value="yes">
+          <label for="currently-employed">I currently work here</label>
+        </p>
+
+        <p>
+          <label for="job-description">Job Responsibilities &amp; Achievements *</label>
+          <textarea
+            id="job-description"
+            name="job-description"
+            required
+            rows="6"
+            minlength="50"
+            maxlength="2000"
+          ></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Previous Position (Optional)</legend>
+
+        <p>
+          <label for="prev-company-name">Company Name</label>
+          <input
+            type="text"
+            id="prev-company-name"
+            name="prev-company-name"
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="prev-job-title">Job Title</label>
+          <input
+            type="text"
+            id="prev-job-title"
+            name="prev-job-title"
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="prev-employment-start">Start Date</label>
+          <input
+            type="date"
+            id="prev-employment-start"
+            name="prev-employment-start"
+            max="2026-12-31"
+          >
+        </p>
+
+        <p>
+          <label for="prev-employment-end">End Date</label>
+          <input
+            type="date"
+            id="prev-employment-end"
+            name="prev-employment-end"
+            min="1980-01-01"
+            max="2026-12-31"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Years of Professional Experience *</legend>
+
+        <p>
+          <input type="radio" id="exp-less-than-1" name="years-experience" value="less-than-1" required>
+          <label for="exp-less-than-1">Less than 1 year</label>
+        </p>
+
+        <p>
+          <input type="radio" id="exp-1-3" name="years-experience" value="1-3">
+          <label for="exp-1-3">1–3 years</label>
+        </p>
+
+        <p>
+          <input type="radio" id="exp-3-5" name="years-experience" value="3-5">
+          <label for="exp-3-5">3–5 years</label>
+        </p>
+
+        <p>
+          <input type="radio" id="exp-5-plus" name="years-experience" value="5-plus">
+          <label for="exp-5-plus">5+ years</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Resume Upload</legend>
+
+        <p>
+          <label for="resume">Upload Resume (PDF or DOC, max 5 MB) *</label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            required
+            accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Reference</legend>
+
+        <h3>Reference Contact</h3>
+
+        <p>
+          <label for="reference-name">Reference Name *</label>
+          <input
+            type="text"
+            id="reference-name"
+            name="reference-name"
+            required
+            minlength="2"
+            maxlength="100"
+          >
+        </p>
+
+        <p>
+          <label for="reference-relationship">Relationship *</label>
+          <select id="reference-relationship" name="reference-relationship" required>
+            <option value="">Select relationship</option>
+            <option value="supervisor">Former Supervisor</option>
+            <option value="colleague">Colleague</option>
+            <option value="client">Client</option>
+            <option value="mentor">Mentor</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="reference-email">Reference Email *</label>
+          <input
+            type="email"
+            id="reference-email"
+            name="reference-email"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="reference-phone">Reference Phone *</label>
+          <input
+            type="tel"
+            id="reference-phone"
+            name="reference-phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="555-123-4567"
+            title="Enter a valid phone number in the format 555-123-4567"
+          >
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Save and Continue</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
