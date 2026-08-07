@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Application — Step 2: Position</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Job Application Form</h1>
     <p>Step 2 of 4: Position Details</p>
   </header>
 
-  <nav aria-label="Application steps">
+  <nav class="main-nav" aria-label="Application steps">
     <ul>
       <li><a href="personal-information.html">1. Personal Information</a></li>
       <li><a href="position.html" aria-current="page">2. Position</a></li>
@@ -20,15 +21,15 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="form-container">
     <h2>Position Details</h2>
     <p>Tell us about the role you are applying for and your work preferences.</p>
 
     <form action="experience.html" method="get">
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Role Information</legend>
 
-        <p>
+        <p class="form-row">
           <label for="position-title">Position Applying For *</label>
           <select id="position-title" name="position-title" required>
             <option value="">Select a position</option>
@@ -41,7 +42,7 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="department">Department *</label>
           <select id="department" name="department" required>
             <option value="">Select a department</option>
@@ -53,7 +54,7 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="desired-start-date">Desired Start Date *</label>
           <input
             type="date"
@@ -65,34 +66,34 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Employment Type *</legend>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="employment-full-time" name="employment-type" value="full-time" required>
           <label for="employment-full-time">Full-time</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="employment-part-time" name="employment-type" value="part-time">
           <label for="employment-part-time">Part-time</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="employment-contract" name="employment-type" value="contract">
           <label for="employment-contract">Contract</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="employment-internship" name="employment-type" value="internship">
           <label for="employment-internship">Internship</label>
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Compensation &amp; Availability</legend>
 
-        <p>
+        <p class="form-row">
           <label for="salary-expectation">Expected Annual Salary (USD) *</label>
           <input
             type="number"
@@ -105,43 +106,43 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="willing-to-relocate" name="willing-to-relocate" value="yes">
           <label for="willing-to-relocate">I am willing to relocate for this position</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="available-immediately" name="available-immediately" value="yes">
           <label for="available-immediately">I am available to start immediately</label>
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Work Location Preference</legend>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="pref-onsite" name="work-preference" value="onsite">
           <label for="pref-onsite">On-site</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="pref-remote" name="work-preference" value="remote">
           <label for="pref-remote">Remote</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="pref-hybrid" name="work-preference" value="hybrid">
           <label for="pref-hybrid">Hybrid</label>
         </p>
       </fieldset>
 
-      <p>
-        <button type="submit">Save and Continue</button>
+      <p class="form-row form-actions">
+        <button type="submit" class="btn-submit">Save and Continue</button>
       </p>
     </form>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
   </footer>
 </body>

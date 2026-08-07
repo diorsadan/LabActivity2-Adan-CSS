@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Application — Step 4: Education &amp; Skills</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Job Application Form</h1>
     <p>Step 4 of 4: Education &amp; Skills</p>
   </header>
 
-  <nav aria-label="Application steps">
+  <nav class="main-nav" aria-label="Application steps">
     <ul>
       <li><a href="personal-information.html">1. Personal Information</a></li>
       <li><a href="position.html">2. Position</a></li>
@@ -20,15 +21,15 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="form-container">
     <h2>Education &amp; Skills</h2>
     <p>Complete your application by providing your educational background and relevant skills.</p>
 
     <form action="#" method="post">
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Highest Level of Education</legend>
 
-        <p>
+        <p class="form-row">
           <label for="degree">Degree / Certification *</label>
           <select id="degree" name="degree" required>
             <option value="">Select a degree</option>
@@ -41,7 +42,7 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="school-name">School / Institution Name *</label>
           <input
             type="text"
@@ -53,7 +54,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="field-of-study">Field of Study *</label>
           <input
             type="text"
@@ -65,7 +66,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="graduation-date">Graduation Date (or Expected) *</label>
           <input
             type="date"
@@ -77,7 +78,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="gpa">GPA (0.0–4.0)</label>
           <input
             type="number"
@@ -90,11 +91,11 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Technical Skills</legend>
-        <p>Select all skills that apply to you.</p>
+        <p class="form-hint">Select all skills that apply to you.</p>
 
-        <p>
+        <p class="form-row">
           <label for="primary-skill">Primary Technical Skill *</label>
           <select id="primary-skill" name="primary-skill" required>
             <option value="">Select your primary skill</option>
@@ -110,51 +111,51 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-html" name="skills" value="html">
           <label for="skill-html">HTML</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-css" name="skills" value="css">
           <label for="skill-css">CSS</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-javascript" name="skills" value="javascript">
           <label for="skill-javascript">JavaScript</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-react" name="skills" value="react">
           <label for="skill-react">React</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-node" name="skills" value="node">
           <label for="skill-node">Node.js</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-python" name="skills" value="python">
           <label for="skill-python">Python</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-sql" name="skills" value="sql">
           <label for="skill-sql">SQL</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="skill-git" name="skills" value="git">
           <label for="skill-git">Git / Version Control</label>
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Language Proficiency</legend>
 
-        <p>
+        <p class="form-row">
           <label for="primary-language">Primary Language *</label>
           <select id="primary-language" name="primary-language" required>
             <option value="">Select a language</option>
@@ -166,7 +167,7 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="language-level">Proficiency Level *</label>
           <select id="language-level" name="language-level" required>
             <option value="">Select proficiency</option>
@@ -178,25 +179,25 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Certifications (Optional)</legend>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="cert-aws" name="certifications" value="aws">
           <label for="cert-aws">AWS Certified</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="cert-google" name="certifications" value="google">
           <label for="cert-google">Google Professional Certificate</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="cert-pmp" name="certifications" value="pmp">
           <label for="cert-pmp">PMP (Project Management Professional)</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="other-certification">Other Certification</label>
           <input
             type="text"
@@ -207,10 +208,10 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Final Documents &amp; Statements</legend>
 
-        <p>
+        <p class="form-row">
           <label for="cover-letter">Cover Letter *</label>
           <textarea
             id="cover-letter"
@@ -222,7 +223,7 @@
           ></textarea>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="portfolio-url">Portfolio or LinkedIn URL</label>
           <input
             type="url"
@@ -232,7 +233,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="additional-comments">Additional Comments</label>
           <textarea
             id="additional-comments"
@@ -243,27 +244,27 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Application Agreement *</legend>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="terms-agreement" name="terms-agreement" value="accepted" required>
           <label for="terms-agreement">I certify that the information provided is true and accurate to the best of my knowledge.</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="background-check" name="background-check" value="consent" required>
           <label for="background-check">I consent to a background check if required for this position.</label>
         </p>
       </fieldset>
 
-      <p>
-        <button type="submit">Submit Application</button>
+      <p class="form-row form-actions">
+        <button type="submit" class="btn-submit">Submit Application</button>
       </p>
     </form>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
   </footer>
 </body>

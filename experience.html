@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Application — Step 3: Experience</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Job Application Form</h1>
     <p>Step 3 of 4: Work Experience</p>
   </header>
 
-  <nav aria-label="Application steps">
+  <nav class="main-nav" aria-label="Application steps">
     <ul>
       <li><a href="personal-information.html">1. Personal Information</a></li>
       <li><a href="position.html">2. Position</a></li>
@@ -20,15 +21,15 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="form-container">
     <h2>Work Experience</h2>
     <p>Share your most recent employment history and upload your resume.</p>
 
     <form action="education-skills.html" method="post" enctype="multipart/form-data">
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Most Recent Position</legend>
 
-        <p>
+        <p class="form-row">
           <label for="company-name">Company Name *</label>
           <input
             type="text"
@@ -40,7 +41,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="job-title">Job Title *</label>
           <input
             type="text"
@@ -52,7 +53,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="employment-start">Start Date *</label>
           <input
             type="date"
@@ -63,7 +64,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="employment-end">End Date</label>
           <input
             type="date"
@@ -74,12 +75,12 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="checkbox" id="currently-employed" name="currently-employed" value="yes">
           <label for="currently-employed">I currently work here</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="job-description">Job Responsibilities &amp; Achievements *</label>
           <textarea
             id="job-description"
@@ -92,10 +93,10 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Previous Position (Optional)</legend>
 
-        <p>
+        <p class="form-row">
           <label for="prev-company-name">Company Name</label>
           <input
             type="text"
@@ -106,7 +107,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="prev-job-title">Job Title</label>
           <input
             type="text"
@@ -117,7 +118,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="prev-employment-start">Start Date</label>
           <input
             type="date"
@@ -127,7 +128,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="prev-employment-end">End Date</label>
           <input
             type="date"
@@ -139,34 +140,34 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Years of Professional Experience *</legend>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="exp-less-than-1" name="years-experience" value="less-than-1" required>
           <label for="exp-less-than-1">Less than 1 year</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="exp-1-3" name="years-experience" value="1-3">
           <label for="exp-1-3">1–3 years</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="exp-3-5" name="years-experience" value="3-5">
           <label for="exp-3-5">3–5 years</label>
         </p>
 
-        <p>
+        <p class="form-row">
           <input type="radio" id="exp-5-plus" name="years-experience" value="5-plus">
           <label for="exp-5-plus">5+ years</label>
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Resume Upload</legend>
 
-        <p>
+        <p class="form-row">
           <label for="resume">Upload Resume (PDF or DOC, max 5 MB) *</label>
           <input
             type="file"
@@ -178,12 +179,12 @@
         </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Professional Reference</legend>
 
         <h3>Reference Contact</h3>
 
-        <p>
+        <p class="form-row">
           <label for="reference-name">Reference Name *</label>
           <input
             type="text"
@@ -195,7 +196,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="reference-relationship">Relationship *</label>
           <select id="reference-relationship" name="reference-relationship" required>
             <option value="">Select relationship</option>
@@ -207,7 +208,7 @@
           </select>
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="reference-email">Reference Email *</label>
           <input
             type="email"
@@ -217,7 +218,7 @@
           >
         </p>
 
-        <p>
+        <p class="form-row">
           <label for="reference-phone">Reference Phone *</label>
           <input
             type="tel"
@@ -231,13 +232,13 @@
         </p>
       </fieldset>
 
-      <p>
-        <button type="submit">Save and Continue</button>
+      <p class="form-row form-actions">
+        <button type="submit" class="btn-submit">Save and Continue</button>
       </p>
     </form>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2026 Job Application Portal. All rights reserved.</p>
   </footer>
 </body>
